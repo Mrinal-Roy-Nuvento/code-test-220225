@@ -10,7 +10,7 @@ You must have installed:
 - Node 8.x +
 - NPM or Yarn
 
-The goal of this test is for us to get a sense of your JavaScript skill. We want seeing this demo app be implemented using React, Redux with ajax call to ExpressJS. We are also expected to see best practice, quality code and a web app meeting industrial standard.
+The goal of this test is for us to get a sense of your JavaScript skill. We want seeing this demo app be implemented using React, Redux with ajax call to ExpressJS. We are also expected to see best practice, quality code and a web app meeting industrial standard ( ie: Unit Tests, Responsive design, Accessibility,  Security etc).
  
 ## Instructions
 
