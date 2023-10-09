@@ -1,0 +1,153 @@
+{
+  "companyInfo": {
+    "companyName": "Greenfelder Pty Ltd",
+    "companyMotto": "plug-and-play leverage technologies",
+    "companyEst": "2018-02-09T14:57:26.181Z"
+  },
+  "employees": [
+    {
+      "id": "1da8e1c0-4873-44be-9541-1401a7ba69b6",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/catadeleon/128.jpg",
+      "firstName": "William",
+      "lastName": "Young",
+      "jobTitle": "Senior Web Analyst",
+      "contactNo": "0438 768 323",
+      "address": "Johns Run New Lilly, Australian Capital Territory",
+      "age": 67,
+      "bio": "Dolor suscipit molestiae nam. Reiciendis id necessitatibus odio. Animi neque tempore.",
+      "dateJoined": "2021-01-07T13:59:52.046Z"
+    },
+    {
+      "id": "83a94360-a6c6-4fff-b87d-e3d8703e7878",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/hasslunsford/128.jpg",
+      "firstName": "Eva",
+      "lastName": "Gleason",
+      "jobTitle": "National Optimization Supervisor",
+      "contactNo": "0440 351 905",
+      "address": "Eliza Road Alexistown, Northern Territory",
+      "age": 35,
+      "bio": "Ut ipsa accusamus libero ea consequuntur dignissimos. Sint dolorem doloremque error libero placeat et. Ea earum pariatur. A voluptate voluptas laudantium voluptatem. In fuga dolores maiores sunt.",
+      "dateJoined": "2020-04-11T17:52:19.458Z"
+    },
+    {
+      "id": "7486d6bf-12a5-499b-b1df-be7a4632ea71",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/victor_haydin/128.jpg",
+      "firstName": "Noah",
+      "lastName": "Scott",
+      "jobTitle": "Investor Integration Executive",
+      "contactNo": "0429 202 635",
+      "address": "Oscar Loop Calebbury, Northern Territory",
+      "age": 65,
+      "bio": "Corrupti quod voluptatum sit. Et velit dolores voluptates. Recusandae commodi sunt vero enim alias neque. Id qui ut rem ex at. Adipisci ex nihil. Eaque dolor illum.",
+      "dateJoined": "2023-05-04T03:54:53.296Z"
+    },
+    {
+      "id": "f09b543b-e8c9-4f1f-adaa-dde0a81c97c2",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/karthipanraj/128.jpg",
+      "firstName": "Jayden",
+      "lastName": "Champlin",
+      "jobTitle": "Forward Infrastructure Assistant",
+      "contactNo": "0449 750 152",
+      "address": "Christiansen Mews North Amelieside, South Australia",
+      "age": 30,
+      "bio": "Et sit et nulla nemo similique fugiat aperiam quia. Fugiat soluta voluptas est natus. Saepe laudantium eveniet est. Enim aut id placeat esse. Inventore vel consequatur iure doloribus at quasi minima incidunt dicta.",
+      "dateJoined": "2022-12-03T22:26:04.688Z"
+    },
+    {
+      "id": "78d2752c-95ab-4f0b-b7da-03ad3f26a39a",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/vikashpathak18/128.jpg",
+      "firstName": "Chloe",
+      "lastName": "Kessler",
+      "jobTitle": "Regional Security Strategist",
+      "contactNo": "0452 396 516",
+      "address": "Schultz Loop Sophiastad, South Australia",
+      "age": 36,
+      "bio": "Et cumque expedita. Error magni recusandae et. Voluptatem saepe voluptas sapiente placeat.",
+      "dateJoined": "2022-12-30T08:43:36.195Z"
+    },
+    {
+      "id": "ad607494-2a9a-471c-8b2a-73b15a2d92f2",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/colgruv/128.jpg",
+      "firstName": "Imogen",
+      "lastName": "Jacobs",
+      "jobTitle": "Chief Infrastructure Manager",
+      "contactNo": "0491 071 290",
+      "address": "Swift Knoll East Jack, Australian Capital Territory",
+      "age": 32,
+      "bio": "Sint veritatis repudiandae. Error sed excepturi reprehenderit ipsum minima accusantium. Architecto unde aut. Optio quasi sed.",
+      "dateJoined": "2023-03-07T23:19:02.534Z"
+    },
+    {
+      "id": "93ffdd12-94de-41b8-8369-94fda04bb49b",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/Silveredge9/128.jpg",
+      "firstName": "Jade",
+      "lastName": "Schmitt",
+      "jobTitle": "Customer Mobility Specialist",
+      "contactNo": "0408 343 528",
+      "address": "Kovacek Island Port Abbeybury, Victoria",
+      "age": 54,
+      "bio": "Repudiandae dolorem blanditiis amet harum eius sint commodi odio. Explicabo placeat deserunt laboriosam iure quia. Et fuga atque modi explicabo dolorem laborum ut. Qui soluta perspiciatis consectetur fugiat voluptatem necessitatibus non consequuntur modi. Laborum repudiandae voluptas consequatur qui tenetur nesciunt voluptates nesciunt fuga.",
+      "dateJoined": "2023-01-21T12:39:24.501Z"
+    },
+    {
+      "id": "c06053d3-5f34-433a-8a52-eb9b6036fd52",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mkginfo/128.jpg",
+      "firstName": "Luca",
+      "lastName": "Hessel",
+      "jobTitle": "Lead Mobility Specialist",
+      "contactNo": "0481 943 187",
+      "address": "Lakin Plaza Kiaraside, Western Australia",
+      "age": 34,
+      "bio": "Dolor perferendis est culpa quibusdam. Voluptates voluptate harum quod voluptatum voluptatem quia non fuga officiis. Quod qui qui illum doloribus modi. Tenetur eius ducimus eaque sit eligendi.",
+      "dateJoined": "2022-01-07T23:40:44.470Z"
+    },
+    {
+      "id": "010e15f5-7f7f-43a7-941a-40cbdfe37eee",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/kijanmaharjan/128.jpg",
+      "firstName": "Jackson",
+      "lastName": "Kessler",
+      "jobTitle": "Direct Metrics Representative",
+      "contactNo": "0434 800 318",
+      "address": "Benjamin Place New Emma, Australian Capital Territory",
+      "age": 42,
+      "bio": "Soluta beatae velit similique officia magni repellat. Nam omnis pariatur cupiditate nam porro illum in omnis qui. Asperiores consequatur maxime nulla laborum tempore quaerat incidunt repellendus voluptatem. Officiis excepturi eum voluptate cum aut ut. Sed quia vel optio vel id sint soluta doloremque dolorum. Dolorem enim id esse excepturi.",
+      "dateJoined": "2020-10-24T12:30:13.441Z"
+    },
+    {
+      "id": "43057072-9e41-44d2-8129-9306973fd3ba",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/sur4dye/128.jpg",
+      "firstName": "Layla",
+      "lastName": "Bartoletti",
+      "jobTitle": "Legacy Brand Representative",
+      "contactNo": "0446 507 722",
+      "address": "Ashley Boulevard Josephland, Tasmania",
+      "age": 63,
+      "bio": "Aut rem voluptatem qui molestias vero id repellat. Repellendus velit dolorem est cumque accusamus atque. Praesentium harum veniam dignissimos beatae et placeat minima. Hic aliquid odio.",
+      "dateJoined": "2020-05-15T00:07:37.336Z"
+    },
+    {
+      "id": "492d47c3-caf5-439f-8623-2313a2d78182",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/samscouto/128.jpg",
+      "firstName": "Samantha",
+      "lastName": "Johnston",
+      "jobTitle": "Principal Group Consultant",
+      "contactNo": "0410 998 459",
+      "address": "Smyth Trail Smythmouth, Tasmania",
+      "age": 67,
+      "bio": "Sed quo ducimus totam architecto culpa et veritatis. Ab voluptas sint distinctio quia laudantium fugiat. Iusto officia consequatur architecto quasi beatae nihil. Rerum nisi dolorem consequuntur quo rerum omnis.",
+      "dateJoined": "2021-11-25T21:10:30.363Z"
+    },
+    {
+      "id": "27a13eca-5ca2-43ab-91c7-6b74ad768f6e",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/benoitboucart/128.jpg",
+      "firstName": "Eliza",
+      "lastName": "Kuhn",
+      "jobTitle": "Central Infrastructure Analyst",
+      "contactNo": "0446 683 807",
+      "address": "Mclaughlin Way Scarlettbury, Australian Capital Territory",
+      "age": 18,
+      "bio": "Consequatur sapiente quo neque autem qui est dignissimos velit. Earum et repellendus. Error quia velit aut. Ut excepturi sequi non eaque et. Non sint iusto dolorem reiciendis provident debitis laudantium assumenda soluta. Alias tempore delectus quia qui harum odio.",
+      "dateJoined": "2023-10-08T15:45:50.433Z"
+    }
+  ]
+}

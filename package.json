@@ -9,5 +9,9 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "faker": "^4.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "react-bootstrap": "^2.9.0"
   }
 }

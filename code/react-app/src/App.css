@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+}
+
+.top-nav{
+  position: absolute;
+  top: 0px;
+  left: 2%;
+  height: 13%;
+  background-color: blueviolet;
+  width: 97%;
+  /* border: 1px solid salmon; */
+  /* display: flex; */
+}
+
+.side-nav{
+  position: absolute;
+  left: 0px;
+  width: 2%;
+  height: 100%;
+  background-color: brown;
+}
+
+.top-nav-bottom-text {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items:flex-end;
+  /* align-self: flex-end; */
+  /* border: 2px solid black; */
+  margin-top: 20px;
+}
+
+.company-name {
+  font-size: x-large;
+  /* border: 1px solid white; */
+  text-align: left;
+}
+

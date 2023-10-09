@@ -1,0 +1,72 @@
+.employeeModalContainer {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 40%;
+    height: 60vh;
+    z-index: 100;
+    background-color: white;
+    /* border: 2px solid chartreuse; */
+    box-shadow:  8px 6px 10px rgba(87, 85, 85, 0.3);
+}
+
+.top-row {
+    position: relative;
+    top: 10%;
+    left: 5%;
+    height: 20%;
+    width: 80%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: baseline;
+}
+
+.bottom-row {
+    position: relative;
+    top: auto;
+    top: 11%;
+    left: 5%;
+    height: 60%;
+    width: 80%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-data {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+.top-image {
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid orangered; */
+}
+
+.top-text {
+    width: 70%;
+    height: 100%;
+    /* border: 1px solid grey; */
+    text-align: center;
+
+}
+
+.bottom-left {
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid orangered; */
+    text-align: left;
+}
+
+.bottom-right {
+    width: 70%;
+    height: 100%;
+    /* border: 1px solid grey; */
+    text-align: justify;
+}
