@@ -2,9 +2,12 @@ import React, {useState, useEffect, useRef} from 'react';
 import Table from 'react-bootstrap/Table';
 import employeeData from '../data/sample-data.json'
 import EmployeeDetails from './employeeDetails';
-
+import { useDispatch, useSelector } from 'react-redux';
+import { allEmployees, selectEmployee } from '../features/empSlice';
 
 const EmployeeSummary = () => {
+    const employeeReduxStore = useSelector((state) => state)
+    const dispatch = useDispatch();
     const tableRef = useRef()
     const [empData, setEmpData] = useState()
     const [openModal, setOpenModal] = useState(false)
@@ -17,6 +20,7 @@ const EmployeeSummary = () => {
         // console.log('tableData: ', tableData)
         setEmpData((oldData) => {
             // console.log('inside setEmpData: ', tableData)
+            dispatch(allEmployees(tableData?.employees))
             return (tableData)})
     }, [])
 
@@ -33,6 +37,7 @@ const EmployeeSummary = () => {
         {
             console.log('empData: ', empData)
             console.log('arg: ', arg)
+            dispatch(selectEmployee(arg))
             setEmployeeToShow((x) => arg)
             setOpenModal(true)
         }

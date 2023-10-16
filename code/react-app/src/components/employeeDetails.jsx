@@ -1,8 +1,10 @@
 import React,{useRef} from 'react'
 import './component.css'
+import { useSelector } from 'react-redux';
 
 const EmployeeDetails = ({empDetailData, indx, setOpenModal}) => {
     const modalRef = useRef()
+    const employeeSelectedReduxStore = useSelector((state) => state.employee.selectedEmployee)
     
     console.log('empDetailData: ', empDetailData, indx)
   return (
@@ -13,12 +15,14 @@ const EmployeeDetails = ({empDetailData, indx, setOpenModal}) => {
             console.log('e.target clicked: ', e.target)}} className='employeeModalContainer' >
         <div className="top-row">
             <div className='top-image'>
-                <img src={empDetailData[indx].avatar} />
+                {/* <img src={empDetailData[indx].avatar} /> */}
+                <img src={employeeSelectedReduxStore?.avatar} />
             </div>
             <div className='top-text'>
                 <div style={{position: 'relative', bottom: '-60%', fontSize: '20px'}}>
                 {/* <p style={{position: "relative", bottom: "12%"}}> */}
-                    <strong><u>{empDetailData[[indx]].firstName} {empDetailData[[indx]].lastName}</u></strong>
+                    {/* <strong><u>{empDetailData[[indx]].firstName} {empDetailData[[indx]].lastName}</u></strong> */}
+                    <strong><u>{employeeSelectedReduxStore?.firstName} {employeeSelectedReduxStore?.lastName}</u></strong>
                     {/* </p> */}
                     </div>
             </div>
