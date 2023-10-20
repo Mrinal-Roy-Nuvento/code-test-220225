@@ -3,7 +3,9 @@ import Table from 'react-bootstrap/Table';
 import employeeData from '../data/sample-data.json'
 import EmployeeDetails from './employeeDetails';
 import { useDispatch, useSelector } from 'react-redux';
-import { allEmployees, selectEmployee } from '../features/empSlice';
+import { allEmployees, selectEmployee, searchFunction } from '../features/empSlice';
+import { loadData } from '../features/empSlice';
+import axios from 'axios'
 
 const EmployeeSummary = () => {
     const employeeReduxStore = useSelector((state) => state)
@@ -14,14 +16,17 @@ const EmployeeSummary = () => {
     const [employeeToShow, setEmployeeToShow] = useState(0)
 
     useEffect(() => {
+        dispatch(loadData())  //used redux dispatch for laoding data from local
+        
         const loadedData = JSON.stringify(employeeData);
         const tableData = JSON.parse(loadedData);
         // console.log('loadedData: ', loadedData)
         // console.log('tableData: ', tableData)
         setEmpData((oldData) => {
+            
             // console.log('inside setEmpData: ', tableData)
-            dispatch(allEmployees(tableData?.employees))
-            return (tableData)})
+            dispatch(allEmployees(employeeReduxStore?.employee?.empData?.employees))
+            return (employeeReduxStore?.employee?.empData)})
     }, [])
 
     const handleTableClick = (e) => { 
@@ -35,7 +40,7 @@ const EmployeeSummary = () => {
     const getEmployeeDetail = (arg) => {
         if(!openModal)
         {
-            console.log('empData: ', empData)
+            console.log('empData: ', employeeReduxStore?.employee?.empData)
             console.log('arg: ', arg)
             dispatch(selectEmployee(arg))
             setEmployeeToShow((x) => arg)
@@ -46,12 +51,24 @@ const EmployeeSummary = () => {
         }
      }
 
+    const handleSearch = (e) => {
+        console.log(e.target.value)
+        dispatch(searchFunction({searchFor: e.target.value, dataToSearch: employeeReduxStore?.employee?.empData?.employees}))
+    }
+
   return (
     <>
+    <div><input 
+            type="search" 
+            placeholder='Search' 
+            style={{position: "absolute",border: "2px red solid",top: "90px", right:"50px", width: "200px", height: "40px"}}
+            onChange={handleSearch}
+            >
+                </input></div>
     {openModal && 
         <EmployeeDetails 
             className='employeeModalContainer'
-            empDetailData={empData?.employees} indx={employeeToShow}  
+            empDetailData={employeeReduxStore?.employee?.empData?.employees} indx={employeeToShow}  
             setOpenModal={setOpenModal}
             />}
             <div ref={tableRef} onClick={(e) => handleTableClick(e)} className='table-data'>
@@ -67,11 +84,9 @@ const EmployeeSummary = () => {
       <tbody hover>
         
         {
-            empData?.employees?.map((each, indx) => {
+            employeeReduxStore?.employee?.searchedEmployee.length===0 ? employeeReduxStore?.employee?.empData?.employees?.map((each, indx) => {
                 return (
                     <>
-                    {/* <Card body> */}
-                        {/* <div> */}
                     <tr 
                         key={indx}
                         onClick={() => getEmployeeDetail(indx)}
@@ -80,11 +95,22 @@ const EmployeeSummary = () => {
                         <td><img src={each.avatar} />{each.firstName} {each.lastName}</td>
                         <td>{each.contactNo}</td>
                         <td>{each.address}</td>
-                        
-                        
                     </tr>
-                    {/* </Card> */}
-                    {/* </div> */}
+                    </>
+                    
+                )
+            }) : employeeReduxStore?.employee?.searchedEmployee?.map((each, indx) => {
+                return (
+                    <>
+                    <tr 
+                        key={indx}
+                        onClick={() => getEmployeeDetail(indx)}
+                        >
+                        <td onClick={(each) => console.log(each.id, each.address)}>{each.id}</td>
+                        <td><img src={each.avatar} />{each.firstName} {each.lastName}</td>
+                        <td>{each.contactNo}</td>
+                        <td>{each.address}</td>
+                    </tr>
                     </>
                     
                 )

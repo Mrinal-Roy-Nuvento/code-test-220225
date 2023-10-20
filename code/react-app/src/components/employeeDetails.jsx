@@ -3,8 +3,9 @@ import './component.css'
 import { useSelector } from 'react-redux';
 
 const EmployeeDetails = ({empDetailData, indx, setOpenModal}) => {
+    console.log('empDetailData, indx, setOpenModal: ', empDetailData, indx)
+
     const modalRef = useRef()
-    const employeeSelectedReduxStore = useSelector((state) => state.employee.selectedEmployee)
     
     console.log('empDetailData: ', empDetailData, indx)
   return (
@@ -16,25 +17,25 @@ const EmployeeDetails = ({empDetailData, indx, setOpenModal}) => {
         <div className="top-row">
             <div className='top-image'>
                 {/* <img src={empDetailData[indx].avatar} /> */}
-                <img src={employeeSelectedReduxStore?.avatar} />
+                <img src={empDetailData[indx]?.avatar} />
             </div>
             <div className='top-text'>
                 <div style={{position: 'relative', bottom: '-60%', fontSize: '20px'}}>
                 {/* <p style={{position: "relative", bottom: "12%"}}> */}
                     {/* <strong><u>{empDetailData[[indx]].firstName} {empDetailData[[indx]].lastName}</u></strong> */}
-                    <strong><u>{employeeSelectedReduxStore?.firstName} {employeeSelectedReduxStore?.lastName}</u></strong>
+                    <strong><u>{empDetailData[indx]?.firstName} {empDetailData[indx]?.lastName}</u></strong>
                     {/* </p> */}
                     </div>
             </div>
         </div>
         <div className="bottom-row">
             <div className="bottom-left">
-                <p style={{fontSize: '10px'}}>{empDetailData[[indx]].jobTitle}</p>
-                <p style={{fontSize: '10px'}}>{empDetailData[[indx]].age}</p>
-                <p style={{fontSize: '10px'}}>{empDetailData[[indx]].dateJoined.slice(0,10)}</p>
+                <p style={{fontSize: '10px'}}>{empDetailData[indx]?.jobTitle}</p>
+                <p style={{fontSize: '10px'}}>{empDetailData[indx].age}</p>
+                <p style={{fontSize: '10px'}}>{empDetailData[indx].dateJoined.slice(0,10)}</p>
             </div>
             <div className="bottom-right">
-            <p style={{fontSize: '14px'}}>{empDetailData[[indx]].bio}</p>
+            <p style={{fontSize: '14px'}}>{empDetailData[indx].bio}</p>
             </div>
         </div>
 
